@@ -25,7 +25,6 @@ header {
   top: 0;
   z-index: 10;
   box-shadow: 0 3px 8px rgb(0 0 0 / 0.15);
-  flex-wrap: wrap;
 }
 .logo {
   height: 140px;
@@ -35,7 +34,6 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 1em;
-  flex-wrap: wrap;
 }
 nav li {
   list-style: none;
@@ -155,65 +153,47 @@ nav li {
 .content-section h2 {
   color: #f3b543;
   margin-bottom: 1rem;
-  font-size: 1.8rem;
 }
+
 .content-section ul {
   list-style: disc inside;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
+
 a {
   color: #efa9a4;
   text-decoration: underline;
 }
+
 a:hover {
   color: #f3b543;
 }
 
-/* ✅ Mobile Optimizations */
+/* Responsive */
 @media (max-width: 600px) {
+  #main-container {
+    margin: 1rem;
+    padding: 1rem 1.2rem 2rem;
+  }
   header {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
   }
-
   .logo {
-    height: 90px;
-    margin-bottom: 0.8rem;
+    height: 70px;
+    margin-bottom: 0.5rem;
   }
-
   nav ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 0.6rem;
-    width: 100%;
-    max-width: 480px;
-    padding: 0;
-    margin: 0 auto 1rem auto;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
-
   .menu-btn {
-    font-size: 1rem;
-    padding: 0.6em 1em;
-    width: 100%;
-    max-width: none;
+    font-size: 0.9rem;
+    padding: 0.5em 1em;
   }
-
   #welcome-container {
     font-size: 2rem;
     margin-bottom: 2rem;
   }
-
-  .content-section {
-    padding: 1rem;
-  }
-
-  .content-section h2 {
-    font-size: 1.4rem;
-  }
-
-  .content-section p,
-  .content-section li {
-    font-size: 1rem;
-  }
 }
+
