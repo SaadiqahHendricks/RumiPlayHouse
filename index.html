@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RumiHouse Playhouse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="rphLogo.png" alt="RumiHouse Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><button class="menu-btn" data-target="info">Info</button></li>
+        <li><button class="menu-btn" data-target="program">Our Program</button></li>
+        <li><button class="menu-btn" data-target="schedule">Schedule</button></li>
+        <li><button class="menu-btn" data-target="fees">Fees</button></li>
+        <li><button class="menu-btn" data-target="admissions">Admissions</button></li>
+        <li><button class="menu-btn" data-target="apply">Apply</button></li>
+        <li><button class="menu-btn" data-target="contact">Contact</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Background slideshow -->
+  <div id="bg-slideshow">
+    <div class="bg-slide" style="background-image: url('Image1.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('Image2.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('Image3.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('Image4.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('Image5.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('Image6.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('Image7.jpg');"></div>
+  </div>
+  <div id="overlay"></div>
+
+  <div id="main-container">
+    <!-- Welcome text -->
+    <div id="welcome-container">
+      <h1 id="welcome-text"></h1>
+    </div>
+
+    <!-- Page content hidden initially -->
+    <div id="page-content" class="hidden">
+      <!-- Info -->
+      <section id="info" class="content-section active">
+        <h2>Who Are We?</h2>
+        <p>
+          Rumi Playhouse offers an intimate early childhood program serving children ages 2 to 5 years in Athlone, Cape Town and its surrounding areas. We keep our spaces warm, earthy and “homely,” providing a safe and loving environment to each child.
+        </p>
+        <p>
+          Inspired by the Reggio Emilia approach, we aim not only to care, guide and establish trust but to inspire, to nurture curiosity and to challenge young children.
+        </p>
+        <p>
+          We value open ended play, connection and the ever evolving interest and development of children.
+        </p>
+        <p>
+          Although we focus on play based learning, we incorporate the Montessori philosophy but place strong focus on the Reggio Emilia method by providing many unconventional materials – indoors and outdoors as well as in the Atelier (Art/Sensory room).
+        </p>
+
+        <h2>Our Vision</h2>
+        <p>
+          Our key area of focus is on developing the child as a whole, in a holistic manner by enhancing their self-esteem, providing a second home, security and establishing confidence required for a successful life.
+        </p>
+        <p>
+          We use minimal transitions and appreciate the gift of time, allowing children to become invested in meaningful interactions with materials, processes, peers and teachers. Above all, we value joy, wonder, and connection in early childhood, and we strive to make these present in all we do.
+        </p>
+
+        <h2>We Offer</h2>
+        <ul>
+          <li>Enrollments ages 2 to 5 years</li>
+          <li>Intimate environment</li>
+          <li>Strong focus on unconventional materials/activities</li>
+          <li>A well-developed age appropriate Atelier (Art/Sensory room)</li>
+          <li>Classroom tour by appointment</li>
+          <li>Paediatric dietary approved snacks/lunch</li>
+          <li>Vertical age group setting with children ages 2 to 5 years old</li>
+          <li>Potty training from 2 years old</li>
+        </ul>
+        <p>
+          Each child will undergo a free medical analysis. Occupational therapy assessments to take place on a termly basis.
+        </p>
+      </section>
+
+      <!-- Our Program -->
+      <section id="program" class="content-section">
+        <h2>Our Program</h2>
+        <p>
+          At Rumi Playhouse, we begin our day with work time in the main classroom and in the atelier. Children are invited to move freely about the space while collaborating with peers or engaging in parallel work. Our indoor classroom boasts a community table for bread baking and other group projects, a loose parts center, a block area, a home life corner, a reading nook, and other areas to explore, connect, and create.
+        </p>
+        <p>
+          We have a separate on-site atelier where children work with light/shadows, sensory materials, and a variety of child-accessible artistic media. As we near the end of work time, children take supervised trips to the bathroom in pairs so as not to disrupt the focused energy of the group. When this is complete, the children gather on the main rug for circle time. We come together to share conversation, to sing, read and learn together but to sweetly be in one another's company.
+        </p>
+        <p>
+          During circle time, we give children exposure to live music and verse, as we believe they are powerful tools for social/emotional learning, language acquisition, and early math and literacy skills. On Fridays, we offer Islamic studies. When we've finished meeting as a group, the children enjoy a snack and then head outdoors to play, to garden and experience unconventional methods of play. We use the outdoor space in all types of (safe) weather.
+        </p>
+        <p>
+          Just as in the preschools of Reggio Emilia, Italy, our curriculum is emergent and is based entirely on the interests of the group. Teachers observe children and document the learning process in order to bring new challenges to the students and inform the emergent curriculum. An occupational therapy assessment takes place once the child is enrolled.
+        </p>
+        <p>
+          We have a clear and predictable structure to our day, with plenty of time for children to exercise interest and agency in our environment. Class sizes are kept small (up to 20 children and 2–3 teachers daily) to ensure responsive relationships and intimate learning experiences. We provide children with space, time, community, and an intentionally-curated environment in which to learn and grow.
+        </p>
+      </section>
+
+      <!-- Schedule -->
+      <section id="schedule" class="content-section">
+        <h2>Daily Program</h2>
+        <ul>
+          <li>8:30/9:00 Arrival + Work Time (Classroom/Atelier)</li>
+          <li>10:15 Circle Time + Music/Movement</li>
+          <li>10:30 Snack at Community Table + Stories</li>
+          <li>10:45 Outdoor Play (Rain or Shine)</li>
+          <li>12:00 Lunch at Community Table + Stories</li>
+          <li>12:30 Quiet Reading + Rest + Home time</li>
+          <li>2:00 Outdoor Play</li>
+          <li>3:00 Dismissal</li>
+        </ul>
+
+        <h2>Full Day Program</h2>
+        <p>
+          3:00 Snack<br />
+          3:30 Depending on the group's needs/desires/ongoing projects, the schedule for extended day will vary. Included is outdoor time, special activities such as baking, yoga, story time, atelier work, and open play.<br />
+          4:00–5:30 Open Dismissal
+        </p>
+
+        <h2>School Times</h2>
+        <p>
+          Half Day program: 6:30am until 12:30pm<br />
+          Full Day program: 6:30am until 17:30pm<br />
+          <em>Please note that school commences at 8am sharp. A penalty fee of R200 will be charged for late collections. Please respect the school operating hours.</em>
+        </p>
+      </section>
+
+      <!-- Fees -->
+      <section id="fees" class="content-section">
+        <h2>School Fees</h2>
+        <p>
+          R1800 × 12 months half day program<br />
+          R2400 × 12 months full day program<br />
+          <em>Please note that if you select full day, children may be collected earlier than 17:30.</em>
+        </p>
+      </section>
+
+      <!-- Admissions -->
+      <section id="admissions" class="content-section">
+        <h2>School Year Admissions</h2>
+        <p>
+          The admissions season has commenced—opening on 23rd June 2025. Tour dates will be announced on the website and on Instagram. Interested in enrolling your child at Rumi Playhouse Preschool, please contact the school via email, WhatsApp, or call. Our 30-minute tours fill quickly so it is to your advantage to secure a date as soon as possible and keep your appointment.
+        </p>
+        <p>
+          Prospective parents/guardians: You must bring the child you are wishing to enroll to your appointment. We ask that siblings do not attend appointments so that we can give our full attention to applicants.
+        </p>
+      </section>
+
+      <!-- Apply -->
+      <section id="apply" class="content-section">
+        <h2>Ready to Apply?</h2>
+        <p>
+          After your appointment, kindly complete your application forms and send via email to:<br />
+          <strong><a href="mailto:rumiplayhouse@gmail.com">rumiplayhouse@gmail.com</a></strong><br />
+          Please put your child's name and "application" in the subject line.
+        </p>
+        <p>Thank you for your interest in Rumi Playhouse. We look forward to growing in community with you.</p>
+        <p>
+          <strong>Please note:</strong><br />
+          School starts Monday 7th July 2025.<br />
+          We will accommodate the school holidays this term as our school is new.<br />
+          As of the fourth term, we follow the Western Cape Education Department school terms/holidays.
+        </p>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="content-section">
+        <h2>Contact</h2>
+        <p>
+          Waseemah (Owner)<br />
+          064 488 1538 / 066 225 4076<br />
+          <a href="mailto:rumiplayhouse@gmail.com">rumiplayhouse@gmail.com</a>
+        </p>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
