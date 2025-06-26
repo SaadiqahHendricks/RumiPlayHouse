@@ -26,9 +26,10 @@ header {
   z-index: 10;
   box-shadow: 0 3px 8px rgb(0 0 0 / 0.15);
 }
-.logo {
-  height: 140px;
-  width: auto;
+@media (min-width: 900px) {
+  .logo {
+    height: 180px;
+  }
 }
 nav ul {
   list-style: none;
@@ -94,7 +95,7 @@ nav li {
 #overlay {
   position: fixed;
   inset: 0;
-  background: rgba(255 228 231 / 0.6);
+  background: rgba(255 228 231 / 0.6); /* soft pink */
   z-index: -1;
 }
 
@@ -196,4 +197,3 @@ a:hover {
     margin-bottom: 2rem;
   }
 }
-
