@@ -25,16 +25,17 @@ header {
   top: 0;
   z-index: 10;
   box-shadow: 0 3px 8px rgb(0 0 0 / 0.15);
+  flex-wrap: wrap;
 }
-@media (min-width: 900px) {
-  .logo {
-    height: 180px;
-  }
+.logo {
+  height: 140px;
+  width: auto;
 }
 nav ul {
   list-style: none;
   display: flex;
   gap: 1em;
+  flex-wrap: wrap;
 }
 nav li {
   list-style: none;
@@ -95,7 +96,7 @@ nav li {
 #overlay {
   position: fixed;
   inset: 0;
-  background: rgba(255 228 231 / 0.6); /* soft pink */
+  background: rgba(255 228 231 / 0.6);
   z-index: -1;
 }
 
@@ -154,46 +155,66 @@ nav li {
 .content-section h2 {
   color: #f3b543;
   margin-bottom: 1rem;
+  font-size: 1.8rem;
 }
-
 .content-section ul {
   list-style: disc inside;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
-
 a {
   color: #efa9a4;
   text-decoration: underline;
 }
-
 a:hover {
   color: #f3b543;
 }
 
-/* Responsive */
+/* ✅ Mobile Optimizations */
 @media (max-width: 600px) {
   #main-container {
     margin: 1rem;
     padding: 1rem 1.2rem 2rem;
   }
+
   header {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
+
   .logo {
-    height: 70px;
-    margin-bottom: 0.5rem;
+    height: 90px;
+    margin-bottom: 0.8rem;
   }
+
   nav ul {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
   }
+
   .menu-btn {
-    font-size: 0.9rem;
-    padding: 0.5em 1em;
+    font-size: 1rem;
+    padding: 0.6em 1.2em;
+    width: 90%;
+    max-width: 300px;
   }
+
   #welcome-container {
     font-size: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .content-section {
+    padding: 1rem;
+  }
+
+  .content-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .content-section p,
+  .content-section li {
+    font-size: 1rem;
   }
 }
